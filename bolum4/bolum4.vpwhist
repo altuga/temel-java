@@ -1,0 +1,84 @@
+[Global]
+CurrentProject=bolum4.vpj
+[ProjectDates]
+bolum4.vpj=20120229163023961
+[ActiveConfig]
+bolum4.vpj=,Debug
+[TreeExpansion]
+bolum4.vpj 1 1 0 0
+[State]
+SCREEN: 1280 800 22 22 960 549 0 0 M 0 0 0 0 974 442 0
+CWD: \Users\usta\Desktop\Java Eğitimi\kodlar\bolum4
+BUFFER: BN="Hesaplama.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.17 CL=17 LE=0 CX=17 CY=2 WI=5 BI=4 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="PaketKullanim.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=23 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="UstaBasi.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.17 CL=17 LE=0 CX=17 CY=2 WI=5 BI=22 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="oylesine_bir_dizin\AltKomsu.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=25 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="oylesine_bir_dizin\Test1.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=24 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="oylesine_bir_dizin\Test3.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=26 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="oylesine_bir_dizin\UstKomsu.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=608 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=5 BI=27 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="Cakisma2.java"
+BI: MA=1 74 1  TABS=1 9  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=Java	HM=0 MF=96 TL=0 MLL=0 ASE=0 LNL=1 LCF=0 CAPS=0 E=0 ESBU2=-1 CL="" SC="" SCE= SCU=
+VIEW: LN=.38 CL=17 LE=0 CX=17 CY=3 WI=5 BI=6 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 754 309 -1 -1 N  WF=0 WT=1 ",,,"
+BUFFER: BN="Cakisma2.java"
+VIEW: LN=.38 CL=17 LE=0 CX=17 CY=3 WI=185 BI=6 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 754 309 -1 -1 N  WF=0 WT=2 ",,,"
+BUFFER: BN="Hesaplama.java"
+VIEW: LN=.17 CL=17 LE=0 CX=17 CY=2 WI=13 BI=4 HT=0 HN=0 HF=0 HC=4
+WINDOW: 19 22 754 309 -1 -1 N  WF=0 WT=3 ",,,"
+BUFFER: BN="PaketKullanim.java"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=194 BI=23 HT=0 HN=0 HF=0 HC=4
+WINDOW: 38 44 754 309 -1 -1 N  WF=0 WT=4 ",,,"
+BUFFER: BN="UstaBasi.java"
+VIEW: LN=.17 CL=17 LE=0 CX=17 CY=2 WI=200 BI=22 HT=0 HN=0 HF=0 HC=4
+WINDOW: 57 66 754 309 -1 -1 N  WF=0 WT=5 ",,,"
+BUFFER: BN="oylesine_bir_dizin\AltKomsu.java"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=205 BI=25 HT=0 HN=0 HF=0 HC=4
+WINDOW: 76 88 754 309 -1 -1 N  WF=0 WT=6 ",,,"
+BUFFER: BN="oylesine_bir_dizin\Test1.java"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=206 BI=24 HT=0 HN=0 HF=0 HC=4
+WINDOW: 95 110 754 309 -1 -1 N  WF=0 WT=7 ",,,"
+BUFFER: BN="oylesine_bir_dizin\Test3.java"
+VIEW: LN=.0 CL=1 LE=0 CX=1 CY=0 WI=212 BI=26 HT=0 HN=0 HF=0 HC=4
+WINDOW: 114 132 754 309 -1 -1 M  WF=0 WT=9 ",,,"
+BUFFER: BN="oylesine_bir_dizin\UstKomsu.java"
+VIEW: LN=.80 CL=2 LE=0 CX=2 CY=4 WI=218 BI=27 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+Cakisma.java
+Cakisma2.java
+Hesaplama.java
+PaketKullanim.java
+UstaBasi.java
+oylesine_bir_dizin\AltKomsu.java
+oylesine_bir_dizin\Test1.java
+oylesine_bir_dizin\Test3.java
+oylesine_bir_dizin\UstKomsu.java
+DEBUG: 0 0 0 0 4 0 jdwp
+java.*
+javax.*
+com.sun.*
+sun.*
+DEBUG2: 0
+TBCLASS: 0 0
+[TreeExpansion2]
+- bolum4.vpj
+  - (default package)
+  - oylesine_bir_dizin
+  - tr\edu\kou\gerekli
+  - tr\edu\kou\math
+  + tr\edu\kou\util
+scroll:0

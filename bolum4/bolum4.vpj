@@ -1,0 +1,385 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	WorkingDir=".">
+	<Config
+		Name="Debug"
+		Type="java"
+		AppTypeList="application,applet,custom"
+		DebugCallbackName="jdwp"
+		AppType="application"
+		Version="8"
+		CompilerConfigName="Latest Version">
+		<AppTypeTargets Name="Debug">
+			<AppTypeTarget
+				MenuCaption="&amp;Debug"
+				Dialog="_java_options_form Appletviewer"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				Deletable="0"
+				AppType="applet">
+				<Exec CmdLine="appletviewer -J-Xdebug -J-Xnoagent -J-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 %h"/>
+			</AppTypeTarget>
+			<AppTypeTarget
+				MenuCaption="&amp;Debug"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				Deletable="0"
+				AppType="custom">
+				<Exec CmdLine="jdb %cp bolum4"/>
+			</AppTypeTarget>
+		</AppTypeTargets>
+		<AppTypeTargets Name="Execute">
+			<AppTypeTarget
+				MenuCaption="E&amp;xecute"
+				Dialog="_java_options_form Appletviewer"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				AppletClass="bolum4"
+				Deletable="0"
+				AppType="applet">
+				<Exec CmdLine="appletviewer %h"/>
+			</AppTypeTarget>
+			<AppTypeTarget
+				MenuCaption="E&amp;xecute"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0"
+				AppType="custom">
+				<Exec CmdLine="java %cp bolum4"/>
+			</AppTypeTarget>
+		</AppTypeTargets>
+		<ClassPath>
+			<ClassPathElement Value="D:/java_sunumlari/kod/bolum4/"/>
+			<ClassPathElement Value="%(CLASSPATH)"/>
+		</ClassPath>
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				Dialog="_java_options_form Compiler"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				Deletable="0">
+				<Exec CmdLine='"C:\Program Files (x86)\Java\jdk1.6.0_30\bin\javac.exe" -g %jbd %cp "%f"'/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				Dialog="_java_options_form Compiler"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine="javamake"/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				Dialog="_java_options_form Compiler"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine="javarebuild"/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				Dialog="_java_options_form Debugger"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0">
+				<Exec CmdLine='"C:\Program Files (x86)\Java\jdk1.6.0_30\bin\java.exe" -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 %cp . '/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				Dialog="_java_options_form Interpreter"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine='"C:\Program Files (x86)\Java\jdk1.6.0_30\bin\java.exe" %cp . '/>
+			</Target>
+			<Target
+				Name="dash"
+				MenuCaption="-"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="View Javadoc"
+				MenuCaption="&amp;View Javadoc"
+				ShowOnMenu="HideIfNoCmdLine"
+				Dialog="_java_options_form javadoc"
+				RunFromDir="%rw"
+				SaveOption="SaveCurrent"
+				Deletable="0">
+				<Exec
+					CmdLine="javaviewdoc"
+					Type="Slick-C"/>
+			</Target>
+			<Target
+				Name="Javadoc All"
+				MenuCaption="Javadoc All"
+				ShowOnMenu="HideIfNoCmdLine"
+				Dialog="_java_options_form javadoc"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine="javamakedoc javadoc -d docs %cp %{*.java}"/>
+			</Target>
+			<Target
+				Name="dash2"
+				MenuCaption="-"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Make Jar"
+				MenuCaption="Make &amp;Jar"
+				ShowOnMenu="HideIfNoCmdLine"
+				Dialog="_java_options_form jar"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine="javamakejar jar cvf bolum4.jar  %{*} %~other"/>
+			</Target>
+			<Target
+				Name="Java Options"
+				MenuCaption="Java &amp;Options"
+				ShowOnMenu="HideIfNoCmdLine"
+				Deletable="0">
+				<Exec
+					CmdLine="javaoptions"
+					Type="Slick-C"/>
+			</Target>
+		</Menu>
+	</Config>
+	<Config
+		Name="Release"
+		Type="java"
+		AppTypeList="application,applet,custom"
+		DebugCallbackName="jdwp"
+		AppType="application"
+		Version="8"
+		CompilerConfigName="Latest Version">
+		<AppTypeTargets Name="Debug">
+			<AppTypeTarget
+				MenuCaption="&amp;Debug"
+				Dialog="_java_options_form Appletviewer"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				Deletable="0"
+				AppType="applet">
+				<Exec CmdLine="appletviewer -J-Xdebug -J-Xnoagent -J-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 %h"/>
+			</AppTypeTarget>
+			<AppTypeTarget
+				MenuCaption="&amp;Debug"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				Deletable="0"
+				AppType="custom">
+				<Exec CmdLine="jdb %cp bolum4"/>
+			</AppTypeTarget>
+		</AppTypeTargets>
+		<AppTypeTargets Name="Execute">
+			<AppTypeTarget
+				MenuCaption="E&amp;xecute"
+				Dialog="_java_options_form Appletviewer"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				AppletClass="bolum4"
+				Deletable="0"
+				AppType="applet">
+				<Exec CmdLine="appletviewer %h"/>
+			</AppTypeTarget>
+			<AppTypeTarget
+				MenuCaption="E&amp;xecute"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0"
+				AppType="custom">
+				<Exec CmdLine="java %cp bolum4"/>
+			</AppTypeTarget>
+		</AppTypeTargets>
+		<ClassPath>
+			<ClassPathElement Value="D:/java_sunumlari/kod/bolum4/"/>
+			<ClassPathElement Value="%(CLASSPATH)"/>
+		</ClassPath>
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				Dialog="_java_options_form Compiler"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				Deletable="0">
+				<Exec CmdLine='"C:\Program Files (x86)\Java\jdk1.6.0_30\bin\javac.exe" %jbd %cp "%f"'/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				Dialog="_java_options_form Compiler"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine="javamake"/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				Dialog="_java_options_form Compiler"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine="javarebuild"/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				Dialog="_java_options_form Debugger"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				Deletable="0">
+				<Exec CmdLine='"C:\Program Files (x86)\Java\jdk1.6.0_30\bin\java.exe" -Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000 %cp . '/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				Dialog="_java_options_form Interpreter"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine='"C:\Program Files (x86)\Java\jdk1.6.0_30\bin\java.exe" %cp . '/>
+			</Target>
+			<Target
+				Name="dash"
+				MenuCaption="-"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="View Javadoc"
+				MenuCaption="&amp;View Javadoc"
+				ShowOnMenu="HideIfNoCmdLine"
+				Dialog="_java_options_form javadoc"
+				RunFromDir="%rw"
+				SaveOption="SaveCurrent"
+				Deletable="0">
+				<Exec
+					CmdLine="javaviewdoc"
+					Type="Slick-C"/>
+			</Target>
+			<Target
+				Name="Javadoc All"
+				MenuCaption="Javadoc All"
+				ShowOnMenu="HideIfNoCmdLine"
+				Dialog="_java_options_form javadoc"
+				RunFromDir="%rw"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine="javamakedoc javadoc -d docs %cp %{*.java}"/>
+			</Target>
+			<Target
+				Name="dash2"
+				MenuCaption="-"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Make Jar"
+				MenuCaption="Make &amp;Jar"
+				ShowOnMenu="HideIfNoCmdLine"
+				Dialog="_java_options_form jar"
+				RunFromDir="%rw"
+				BuildFirst="1"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				Deletable="0">
+				<Exec CmdLine="javamakejar jar cvf bolum4.jar  %{*} %~other"/>
+			</Target>
+			<Target
+				Name="Java Options"
+				MenuCaption="Java &amp;Options"
+				ShowOnMenu="HideIfNoCmdLine"
+				Deletable="0">
+				<Exec
+					CmdLine="javaoptions"
+					Type="Slick-C"/>
+			</Target>
+		</Menu>
+	</Config>
+	<CustomFolders>
+		<Folder
+			Name="Source Files"
+			Filters="*.java;*.c;*.cpp;*.cxx;*.hxx;*.prg;*.pas;*.dpr;*.asm;*.bas;*.sc;*.e">
+		</Folder>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.jpg;*.gif;*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters=""/>
+	</CustomFolders>
+	<Files AutoFolders="PackageView">
+		<Folder
+			Name="(default package)"
+			Type="Package">
+			<F N="Cakisma2.java"/>
+			<F N="Hesaplama.java"/>
+			<F N="PaketKullanim.java"/>
+			<F N="UstaBasi.java"/>
+		</Folder>
+		<Folder Name="oylesine_bir_dizin">
+			<F N="oylesine_bir_dizin/AltKomsu.java"/>
+			<F N="oylesine_bir_dizin/Test1.java"/>
+			<F N="oylesine_bir_dizin/Test3.java"/>
+			<F N="oylesine_bir_dizin/UstKomsu.java"/>
+		</Folder>
+		<Folder Name="tr/edu/kou/gerekli">
+			<F N="tr/edu/kou/gerekli/GetSet.java"/>
+			<F N="tr/edu/kou/gerekli/Kahve.java"/>
+			<F N="tr/edu/kou/gerekli/Kedi.java"/>
+			<F N="tr/edu/kou/gerekli/Musteri.java"/>
+			<F N="tr/edu/kou/gerekli/Profesor.java"/>
+			<F N="tr/edu/kou/gerekli/Robot.java"/>
+		</Folder>
+		<Folder Name="tr/edu/kou/math">
+			<F N="tr/edu/kou/math/DortIslem.java"/>
+			<F N="tr/edu/kou/math/Hesaplama.java"/>
+		</Folder>
+		<Folder Name="tr/edu/kou/util">
+			<F N="tr/edu/kou/util/ArrayList.java"/>
+			<F N="tr/edu/kou/util/Asistan.java"/>
+			<F N="tr/edu/kou/util/Hayvan.java"/>
+			<F N="tr/edu/kou/util/Makine.java"/>
+			<F N="tr/edu/kou/util/Makine2.java"/>
+			<F N="tr/edu/kou/util/PaketBir.java"/>
+			<F N="tr/edu/kou/util/Test1.java"/>
+		</Folder>
+	</Files>
+</Project>
