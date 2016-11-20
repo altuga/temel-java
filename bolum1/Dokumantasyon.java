@@ -1,7 +1,7 @@
 /**
- * @author rahman usta
+ * @author Altug Altintaas
  * @see java.lang.String
- * @since 10.10.2010
+ * @since 10.10.2016
  * @version 1.6
  */
 public class Dokumantasyon {
