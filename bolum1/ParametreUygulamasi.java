@@ -5,6 +5,7 @@ public class ParametreUygulamasi
 
 		System.out.println("Merhaba Girdiginiz Parametre = " + args[0] );
 
+
 	}
 	
 }

@@ -1,9 +1,9 @@
 /** Ilk Java Kodumuzun Dokumantasyonu
- * Ekrana Selamlar diyen bir uygulama  
+ * Ekrana Selamlar diyen bir uygulama
  * @see #main
- * @author Altug B. Altintas (upux@yahoo.com)
- * @version 1.0 
- * @since 09.01.2002 
+ * @author Altug B. Altintas(altug.altintas@kodcu.com)
+ * @version 1.0
+ * @since 09.01.2016
 */
 public class SelamDoc {
   
