@@ -4,6 +4,6 @@ public class OtamatikCevirim {
 	
 	int x = 0, y = 1, z = 2;
 	
-	System.out.println("Sonuc =" x + y + z );
+	System.out.println("Sonuc =" + x + y + z );
     }  
 }

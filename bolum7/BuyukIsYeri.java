@@ -69,7 +69,7 @@ public class BuyukIsYeri {
 
 	public static void main(String args[]) {
 		Calisan[] c = new Calisan[6];
-		// c[0] = new Calisan(); ! Hata ! arayüz olusturulamaz
+		// c[0] = new Calisan(); ! Hata ! arayÃ¼z olusturulamaz
 		c[0] = new Programci();	//yukari dogru cevirim (upcasting)
 		c[1] = new Pazarlamaci();  //yukari dogru cevirim (upcasting)
 		c[2] = new Mudur();	 //yukari dogru cevirim (upcasting)

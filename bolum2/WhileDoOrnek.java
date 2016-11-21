@@ -2,7 +2,7 @@ public class WhileDoOrnek {
 
 	public static void main(String args[])
 	{
-		int i = 10 ;	   //döngü kontrol degiskeni
+		int i = 10 ;	   //dÃ¶ngÃ¼ kontrol degiskeni
 		do {
 			System.out.println("i = " + i);
 			i-- ;

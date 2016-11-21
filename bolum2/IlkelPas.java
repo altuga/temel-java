@@ -12,7 +12,6 @@ public class IlkelPas {
 
 	public static void main(String[] args) {  
 
-
 		double a = 5 ;
 		f(a);
 		System.out.println("a --> " + a );

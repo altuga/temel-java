@@ -20,9 +20,9 @@ public class HashtableTest {
 		}
 
 		// anahtarlari aliyoruz
-		Enumeration enum = sayilar.keys();
-		while (enum.hasMoreElements()) {
-		    System.out.println("Anahtarlar " + enum.nextElement());
+		Enumeration enuma = sayilar.keys();
+		while (enuma.hasMoreElements()) {
+		    System.out.println("Anahtarlar " + enuma.nextElement());
 		}
 
 		// degerleri aliyoruz

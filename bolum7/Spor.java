@@ -18,6 +18,9 @@ class Basketbolcu extends Sporcu {
 Bu ornegimiz derleme aninda hata alicaktir.
 Java, coklu kalitimi desteklemez
 */
+
+/*
 class  SportmenMehmet extends BuzPatenci , Basketbolcu {
 
 }
+*/

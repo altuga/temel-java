@@ -1,6 +1,8 @@
 class Sayi {
 	int i;
 }
+
+
 public class NesnelerdeAtama {
 	public static void main(String[] args) {
 		Sayi s1 = new Sayi();
