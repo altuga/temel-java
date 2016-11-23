@@ -1,6 +1,6 @@
 package bolum4;
 
-import com.usta.util.*;
+import com.kodcu.util.*;
 
 public class UstaBasi {
 
