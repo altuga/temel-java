@@ -1,6 +1,6 @@
 class KahveFincani {
 
-  public KahveFincani() { 
+  public KahveFincani() { // yapilancirici metod / constractor method
     System.out.println("KahveFincani..");
   }
 

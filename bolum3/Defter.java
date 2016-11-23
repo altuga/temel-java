@@ -10,8 +10,8 @@ public class Defter {
     Kagit k1 = new Kagit(1); // dikkat
     
     public Defter() {
-	System.out.println("Defter() yapilandirici metod");
-	k2 = new Kagit(33); 
+        System.out.println("Defter() yapilandirici metod");
+        k2 = new Kagit(33);
     }
 
     Kagit k2 = new Kagit(2); //dikkat

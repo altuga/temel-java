@@ -1,13 +1,13 @@
-class Elma {
+class AmasyaElmasi {
 
 	int i = 0 ;
-	Elma(int y) {
+	AmasyaElmasi(int y) {
 		this.i = y ;
-		System.out.println("Elma Nesnesi Olusturuluyor = " + i );        
+		System.out.println("AmasyaElmasi Nesnesi Olusturuluyor = " + i );
 	}
 
 	public void finalize() {
-		System.out.println("Elma Nesnesi Yok Ediliyor = "+ i );
+		System.out.println("AmasyaElmasi Nesnesi Yok Ediliyor = "+ i );
 	} 
 }
 
@@ -15,11 +15,11 @@ public class Temizle {
 
 	public static void main(String args[]) {
 		for (int y=0 ; y<10 ;y++) {
-			Elma e = new Elma(y);
+			AmasyaElmasi e = new AmasyaElmasi(y);
 		}
 
 		for (int y=10 ; y<21 ;y++) {
-			Elma e = new Elma(y);
+			AmasyaElmasi e = new AmasyaElmasi(y);
 		}
 	}
 }

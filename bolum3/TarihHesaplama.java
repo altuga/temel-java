@@ -13,10 +13,10 @@ public class TarihHesaplama {
 	
     public static void main(String[] args) {
 	
-	TarihHesaplama th = new TarihHesaplama();
-	th.gunEkle(2);
-	th.gunEkle(3);
-	th.gunuEkranaBas();
+        TarihHesaplama th = new TarihHesaplama();
+        th.gunEkle(2);
+        th.gunEkle(3);
+        th.gunuEkranaBas();
     }
 }
 

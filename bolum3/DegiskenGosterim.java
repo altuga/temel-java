@@ -4,8 +4,8 @@ public class DegiskenGosterim {
     static int y ; // sinifa ait global alan
 	
     public void metod () {
-	int i ; //yerel degisken
-	//static int y = 5 ;  // yanlis
-        
+        int i ; //yerel degisken
+        //static int y = 5 ;  // yanlis
+
     } 
 }

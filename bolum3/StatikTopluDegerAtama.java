@@ -17,7 +17,7 @@ public class StatikTopluDegerAtama {
   }  
   
     public static void main(String args[]) {
-	new StatikTopluDegerAtama();
+	    new StatikTopluDegerAtama();
 
    }   
 }

@@ -11,9 +11,9 @@ public class NonStatikTopluDegerAtama {
     Dinozor dz ;
 	
     {
-	x = 5 ;
-	y = 6.89 ;
-	dz= new Dinozor();
+        x = 5 ;
+        y = 6.89 ;
+        dz= new Dinozor();
     }
 	
     public static void main(String args[]) {

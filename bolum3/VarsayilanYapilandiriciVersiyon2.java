@@ -1,12 +1,12 @@
-class Araba {
+class Toyota {
 	int kapi_sayisi;
 	int vites_sayisi ;
 
-	public Araba(int adet) {
+	public Toyota(int adet) {
 		kapi_sayisi = adet ;
 	}
 
-	public Araba(int adet , int sayi) {
+	public Toyota(int adet , int sayi) {
 		kapi_sayisi =  adet ;
 		vites_sayisi = sayi  ;
 	}
@@ -15,9 +15,9 @@ class Araba {
 public class VarsayilanYapilandiriciVersiyon2 {
 
 	public static void main(String[] args) {
-		//Araba ar = new Araba(); //yanlis ;
-		Araba ar1 = new Araba(2);
-		Araba ar2 = new Araba(4,5);
+		//Toyota ar = new Toyota(); //yanlis ;
+		Toyota ar1 = new Toyota(2);
+		Toyota ar2 = new Toyota(4,5);
 	}
 } 
 

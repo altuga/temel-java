@@ -2,9 +2,9 @@
 public class CopNesne {
 
 	public static void main(String args[]) {
-		Elma e = new Elma(1);
-		new Elma(2);
-		System.gc() ; // çöp toplayıcısını çağırdık 
+		AmasyaElmasi e = new AmasyaElmasi(1);
+		new AmasyaElmasi(2);
+		System.gc() ; // Ã‡Ã¶p toplayÄ±cÄ±sÄ± Ã§alÄ±ÅŸtÄ±
 	}
 }
 

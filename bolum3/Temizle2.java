@@ -17,7 +17,7 @@ public class Temizle2 {
 		for (int y=0 ; y<10 ;y++) {
 			Elma2 e = new Elma2(y);
 		}
-		System.gc() ; // çöp toplayýcýsýný çaðýrdýk 
+		System.gc() ; // Cop toplayaciyici tetikle
 		for (int y=10 ; y<21 ;y++) {
 			Elma2 e = new Elma2(y);
 		}
