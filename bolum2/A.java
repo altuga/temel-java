@@ -16,11 +16,3 @@ class NesnelerdeAtamaX {
 		System.out.println("3: s1.i: " + s1.i +", s2.i: " + s2.i);
 	}
 }
-
-class A {
-	public static void main(String[] args) {
-
-		System.out.println("Miyav "  );
-
-	}
-}
