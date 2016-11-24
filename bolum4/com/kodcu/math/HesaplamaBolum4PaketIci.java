@@ -1,6 +1,6 @@
 package com.kodcu.math	;
 
-public class Hesaplama {
+public class HesaplamaBolum4PaketIci {
 
     public static void main(String args[]) {
 	
