@@ -1,4 +1,6 @@
 package com.kodcu.util;
+
+
 public class Hayvan {
 	protected String a = "Hayvan.a";
 	String b = "Hayvan.b"; //friendly

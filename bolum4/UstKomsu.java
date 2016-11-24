@@ -1,5 +1,5 @@
 class UstKomsu {
     void merhaba() {
-	System.out.println("Merhaba");
+        System.out.println("Merhaba");
     }
 }

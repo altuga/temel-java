@@ -3,7 +3,7 @@ package com.kodcu.util;
 public class Makine {
      
     int devir_sayisi;
-    public String model = "2002 model" ;
+    public String model = "2016 model" ;
     
     public int degerAl() {
 	return devir_sayisi;
