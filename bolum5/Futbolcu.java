@@ -1,29 +1,29 @@
 class KontrolMerkezi {
 
-    public static void checkUp(Sporcu s) {
-	// ..
-	s.calis();
+    public static void checkUp(CevikSporcu s) {
+        // ..
+        s.calis();
     }
 }
 
-class Sporcu {
+class CevikSporcu {
 
-    public void calis() { 
-	System.out.println("Sporcu.calis()");
-    } 
+    public void calis() {
+        System.out.println("Sporcu.calis()");
+    }
 }
 
-class Futbolcu extends Sporcu {
+class CevikFutbolcu extends CevikSporcu {
 
     public void calis() {  // iptal etme (Overriding)
-	System.out.println("Futbolcu.calis()");
+        System.out.println("Futbolcu.calis()");
     }
-	
+
     public static void main(String args[]) {
-	
-	Sporcu s = new Sporcu();
-	Futbolcu f = new Futbolcu();
-	KontrolMerkezi.checkUp(s);
-	KontrolMerkezi.checkUp(f);
+
+        CevikSporcu s = new CevikSporcu();
+        CevikFutbolcu f = new CevikFutbolcu();
+        KontrolMerkezi.checkUp(s);
+        KontrolMerkezi.checkUp(f);
     }
 }

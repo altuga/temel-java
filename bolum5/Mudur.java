@@ -1,24 +1,24 @@
 
-class Calisan {
+class CalisanFabrika {
 
     public void isYap(double a) {
-	
-		System.out.println("Calisan.isYap()");
+
+        System.out.println("Calisan.isYap()");
     }
 }
 
 
-class Mudur extends Calisan {
+class MudurFabrika extends CalisanFabrika {
 
     public void isYap(int a) {
-	
-		System.out.println("Mudur.isYap()");
+
+        System.out.println("Mudur.isYap()");
     }
 
     public static void main(String args[]) {
-	
-	Mudur m = new Mudur();
-	m.isYap(3.3);
+
+        MudurFabrika mudurFabrika = new MudurFabrika();
+        mudurFabrika.isYap(3.3);
     }
 }
 

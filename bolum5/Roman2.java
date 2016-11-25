@@ -1,4 +1,4 @@
-class Kitap2 {
+class KalinKitap {
 	public int sayfaSayisiOgren() {
 		System.out.println("Kitap2 - sayfaSayisiOgren() ");
 		return 440;
@@ -15,7 +15,7 @@ class Kitap2 {
 	}
 }
 
-class Roman2 extends Kitap2 {
+class KalinRoman extends KalinKitap {
 
 	public int sayfaSayisiOgren() {
 		System.out.println("Roman2 - sayfaSayisiOgren() ");
@@ -29,9 +29,9 @@ class Roman2 extends Kitap2 {
 
 
 	public static void main( String args[] ) {
-		Roman2 r2 = new Roman2();
-		int sayfasayisi = r2.sayfaSayisiOgren();
-		double fiyat  = r2.fiyatOgren();
-		String yazar = r2.yazarIsmiOgren();
+		KalinRoman kalinRoman = new KalinRoman();
+		int sayfasayisi = kalinRoman.sayfaSayisiOgren();
+		double fiyat  = kalinRoman.fiyatOgren();
+		String yazar = kalinRoman.yazarIsmiOgren();
 	}
 }

@@ -1,14 +1,14 @@
 
-class A {
+class ANesnesi {
 
     public final void ekranaYaz() {
-	System.out.println("A.ekranaYaz()");
+        System.out.println("ANesnesi.ekranaYaz()");
     }
 }
 
-class B extends A {
+class BNesnesi extends A {
 
     public void ekranaYaz() {
-	System.out.println("B.ekranaYaz()");
+        System.out.println("BNesnesi.ekranaYaz()");
     }
 }
