@@ -1,21 +1,21 @@
-class Kedi {
+class KediNesnesi {
 
-	public  void yakalaAv() {
+	public void yakalaAv() {
 		System.out.println("Kedi sinifi Av yakaladi");
 	}
 
 }
 
-class Kaplan extends Kedi {
+class KaplanNesnesi extends KediNesnesi {
 
-	public static void goster(Kedi k) {
+	public static void goster(KediNesnesi k) {
 		k.yakalaAv();     
 	}
 
    
 	public static void main(String args[] ) {
-		Kedi k = new Kedi()  ;
-		Kaplan  kp = new Kaplan();
+		KediNesnesi k = new KediNesnesi()  ;
+		KaplanNesnesi  kp = new KaplanNesnesi();
 		goster(k);   
 		goster(kp);	 // yukari dogru cevirim (upcasting)
 	}       

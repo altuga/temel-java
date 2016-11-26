@@ -9,11 +9,11 @@ class Kedi2 {
 class Kaplan2 extends Kedi2 {
 
     public static void goster(Kedi2 k) {
-	// k.yakalaAv();  // ! polimorfizm yok ! 
+	         k.yakalaAv();  // ! ekrana ne basar ? !
     }
 
     /* // iptal edemez (override)
-    public void yakalaAv() {
+	public void yakalaAv() {
 		System.out.println("Kaplan sinifi Av yakaladi");
     }
     */

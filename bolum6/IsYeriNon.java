@@ -1,15 +1,15 @@
 
-class Calisan {
+class Calisan6111 {
 	public String pozisyon = "Calisan";
 	public void calis() {
 	}
 }
 
-class Mudur  {
+class Mudur6111  {
 
 	public String pozisyon = "Mudur";
 
-	public Mudur () { // yapilandirici
+	public Mudur6111 () { // yapilandirici
 		pozisyon = "Mudur" ;
 	}
 	public void calis() {  
@@ -17,11 +17,11 @@ class Mudur  {
 	}
 }
 
-class Programci {
+class Programci6111 {
 
 	public String pozisyon = "Programci";
 
-	public  Programci() {  // yapilandirici
+	public  Programci6111() {  // yapilandirici
 		pozisyon = "Programci" ;
 	}
 	public void calis() {	
@@ -29,11 +29,11 @@ class Programci {
 	}
 }
 
-class Pazarlamaci {
+class Pazarlamaci6111 {
 
 	public String pozisyon = "Pazarlamaci";
 	
-	public  Pazarlamaci() {	// yapilandirici
+	public  Pazarlamaci6111() {	// yapilandirici
 		pozisyon = "Pazarlamaci" ;
 	}
 
@@ -49,19 +49,19 @@ public class IsYeriNon {
 		
 		for ( int i = 0 ; i < o.length ; i++ ) {
 			
-			if ( o[i] instanceof Calisan ) {
-				  Calisan c = (Calisan) o[i] ; // asagiya dogru cevirim
+			if ( o[i] instanceof Calisan6111 ) {
+				  Calisan6111 c = (Calisan6111) o[i] ; // asagiya dogru cevirim
 				  c.calis();
 
-			} else if ( o[i] instanceof Mudur ) {
-				  Mudur m = (Mudur) o[i] ; // asagiya dogru cevirim
+			} else if ( o[i] instanceof Mudur6111 ) {
+				  Mudur6111 m = (Mudur6111) o[i] ; // asagiya dogru cevirim
 				  m.calis();
 
-			} else if ( o[i] instanceof Programci ) {
-                  Programci p = (Programci) o[i] ; // asagiya dogru cevirim
+			} else if ( o[i] instanceof Programci6111 ) {
+                  Programci6111 p = (Programci6111) o[i] ; // asagiya dogru cevirim
 				  p.calis();
-			} else if ( o[i] instanceof Pazarlamaci ) {
-                  Pazarlamaci paz = (Pazarlamaci) o[i] ; // asagiya dogru cevirim
+			} else if ( o[i] instanceof Pazarlamaci6111 ) {
+                  Pazarlamaci6111 paz = (Pazarlamaci6111) o[i] ; // asagiya dogru cevirim
 				  paz.calis();
 			} 
 			
@@ -72,10 +72,10 @@ public class IsYeriNon {
 	public static void main(String args[]) {
 	
 		Object[] o = new Object[4];
-		o[0] = new Calisan();     // yukari dogru cevirim (upcasting)
-		o[1] = new Programci();	  // yukari dogru cevirim (upcasting)
-		o[2] = new Pazarlamaci(); // yukari dogru cevirim (upcasting)
-		o[3] = new Mudur();	      // yukari dogru cevirim (upcasting)
+		o[0] = new Calisan6111();     // yukari dogru cevirim (upcasting)
+		o[1] = new Programci6111();	  // yukari dogru cevirim (upcasting)
+		o[2] = new Pazarlamaci6111(); // yukari dogru cevirim (upcasting)
+		o[3] = new Mudur6111();	      // yukari dogru cevirim (upcasting)
 		mesaiBasla(o);
 	}
 }

@@ -1,4 +1,4 @@
-abstract class Calisan {
+abstract class Calisan6098 {
 
     public String pozisyon="Calisan" ;
     public abstract  void calis(); 
@@ -8,9 +8,9 @@ abstract class Calisan {
     }
 }
 
-class Mudur extends Calisan {
+class Mudur6098 extends Calisan6098 {
     
-    public Mudur () { // yapilandirici
+    public Mudur6098 () { // yapilandirici
 	 pozisyon = "Mudur" ;
     }
 	
@@ -19,9 +19,9 @@ class Mudur extends Calisan {
     }
 }
 
-class Programci extends Calisan {
+class Programci6098 extends Calisan6098 {
     
-    public  Programci() { // yapilandirici
+    public  Programci6098() { // yapilandirici
 	pozisyon = "Programci" ;
     }
     public void calis() {  // iptal etme (override)
@@ -33,9 +33,9 @@ class Programci extends Calisan {
     }
 }
 
-class Pazarlamaci extends Calisan {
+class Pazarlamaci6098 extends Calisan6098 {
     
-    public  Pazarlamaci() { // yapilandirici
+    public  Pazarlamaci6098() { // yapilandirici
 	pozisyon = "Pazarlamaci" ;
     }
     public void calis() { // iptal etme (override)
@@ -46,7 +46,7 @@ class Pazarlamaci extends Calisan {
 
 public class AbIsYeri {
     
-    public static  void mesaiBasla(Calisan[] c ) {
+    public static  void mesaiBasla(Calisan6098[] c ) {
 	for (int i = 0 ; i < c.length ; i++) {
 	    c[i].calis(); // !Dikkat!
 	}
@@ -54,11 +54,11 @@ public class AbIsYeri {
     }
 
     public static void main(String args[]) {
-	      Calisan[] c = new Calisan[3];
+	      Calisan6098[] c = new Calisan6098[3];
 	      // c[0] = new Calisan(); // soyut siniflar new ile direk olusturulamazlar
-	      c[0] = new Programci(); // yukari dogru cevirim (upcasting)
-	      c[1] = new Pazarlamaci(); // yukari dogru cevirim (upcasting)
-	      c[2] = new Mudur(); // yukari dogru cevirim (upcasting)
+	      c[0] = new Programci6098(); // yukari dogru cevirim (upcasting)
+	      c[1] = new Pazarlamaci6098(); // yukari dogru cevirim (upcasting)
+	      c[2] = new Mudur6098(); // yukari dogru cevirim (upcasting)
 
 	      mesaiBasla(c);
     }

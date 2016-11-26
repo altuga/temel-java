@@ -1,6 +1,6 @@
 
 
-class Xmodel {
+class Samsung {
 	public void sesAc() {
 		System.out.println("X model televizyon sesAc()");
 	}
@@ -14,7 +14,7 @@ class Xmodel {
 	}
 }
 
-class Ymodel extends Xmodel {
+class SuperSamsung extends Samsung {
 	public void sesAc() {  // iptal ediyor (override)
 		System.out.println("Y model televizyon sesAc()");
 	}
@@ -37,23 +37,23 @@ public class Televizyon3 {
 	public static void main(String args[]) {
 		
 		Object[] ob = new Object[2] ;
-		ob[0] = new Xmodel() ;
-		ob[1] = new Ymodel() ;
+		ob[0] = new Samsung() ;
+		ob[1] = new SuperSamsung() ;
 
 		for (int i = 0 ; i < ob.length ; i++) {
 
 			Object o = ob[i] ;
-			if (o instanceof Ymodel) {	// RTTI
-				Ymodel y_model_kumanda = (Ymodel) o ; //artik guvenli
-				y_model_kumanda.sesAc();
-				y_model_kumanda.sesKapa();
-				y_model_kumanda.kanalDegistir();
-				y_model_kumanda.teleText() ; 
-			} else if (o instanceof Xmodel) { // RTTI
-				Xmodel x_model_kumanda = (Xmodel) o ; // artik guvenli 
-				x_model_kumanda.sesAc();
-				x_model_kumanda.sesKapa();
-				x_model_kumanda.kanalDegistir();
+			if (o instanceof SuperSamsung) {	// RTTI
+				SuperSamsung superSamsung = (SuperSamsung) o ; //artik guvenli
+				superSamsung.sesAc();
+				superSamsung.sesKapa();
+				superSamsung.kanalDegistir();
+				superSamsung.teleText() ;
+			} else if (o instanceof Samsung) { // RTTI
+				Samsung samsung = (Samsung) o ; // artik guvenli
+				samsung.sesAc();
+				samsung.sesKapa();
+				samsung.kanalDegistir();
 
 			}
 		}

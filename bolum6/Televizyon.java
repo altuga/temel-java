@@ -1,5 +1,5 @@
 
-class Xmodel {
+class LG {
 
 	public void sesAc() {
 		System.out.println("X model televizyon sesAc()");
@@ -14,7 +14,7 @@ class Xmodel {
 	}
 }
 
-class Ymodel extends Xmodel {
+class SuperLG extends LG {
 	
 	public void sesAc() {  // iptal etme (override)
 		System.out.println("Y model televizyon sesAc()");
@@ -28,7 +28,7 @@ class Ymodel extends Xmodel {
 		System.out.println("Y model televizyon kanalDegistir() ");
 	}
 
-	public void teleText() { // katýlan yeni bir özellik
+	public void teleText() { // katï¿½lan yeni bir ï¿½zellik
 		System.out.println("Y model televizyon teleText()");
 	}
 
@@ -38,13 +38,13 @@ public class Televizyon {
 	public static void main(String args[]) {
 
 		// yukari dogru cevirim ( upcasting )
-		Xmodel  x_model_kumanda  = new Ymodel(); 
-		x_model_kumanda.sesAc();
-		x_model_kumanda.sesKapa();
-		x_model_kumanda.kanalDegistir();
+		LG  lg  = new LG();
+		lg.sesAc();
+		lg.sesKapa();
+		lg.kanalDegistir();
 		
 		//!! hata !! , bu kumandanin boyle bir dugmesi yok :)
-		// x_model_kumanda.teleText() ; 
+		// lg.teleText() ;
 	}
 }
 
