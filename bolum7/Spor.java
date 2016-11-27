@@ -1,17 +1,17 @@
-abstract class Sporcu {
-	public abstract  void calis();
+abstract class SporInsani {
+    public abstract void calis();
 }
 
-class BuzPatenci extends Sporcu {
-	public void calis() {
-		System.out.println("BuzPatenci calisiyor ....") ;
-	}
+class BuzPatenci extends SporInsani {
+    public void calis() {
+        System.out.println("BuzPatenci calisiyor ....");
+    }
 }
 
-class Basketbolcu extends Sporcu {
-	public void calis() {
-		System.out.println("Basketbolcu calisiyor ....") ;
-	}
+class Basketbolcu extends SporInsani {
+    public void calis() {
+        System.out.println("Basketbolcu calisiyor ....");
+    }
 }
 
 /*
