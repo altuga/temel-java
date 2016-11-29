@@ -15,6 +15,7 @@ public class BenimHatam extends Exception {
         this.id = id ;
     }
     
+    @Override
     public String getLocalizedMessage() {  // iptal etme (override)
           
         switch(id) {

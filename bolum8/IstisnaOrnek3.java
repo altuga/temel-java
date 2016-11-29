@@ -3,19 +3,19 @@ import java.io.*;
 
 public class IstisnaOrnek3 {
 
-    public void cokCalis() throws IOException{
+    public void cokCalis() throws IOException {
 
         File f = new File("ornek.txt");
-        BufferedReader bf = new BufferedReader( new FileReader( f ) );
+        BufferedReader bf = new BufferedReader(new FileReader(f));
         System.out.println(bf.readLine());
 
     }
 
     public void calis() {
-        try {  
+        try {
             cokCalis();
             System.out.println("calis() metodu");
-        } catch(IOException ex) {
+        } catch (IOException ex) {
             System.out.println("Hata Yakalandi-calis() =" + ex);
         }
 

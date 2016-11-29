@@ -2,7 +2,7 @@
 
 public class FinallyOrnek1 {
 
-    public static void a(int deger) throws  SeninHatan {
+    public static void a(int deger) throws SeninHatan {
         if(deger < 0 ) {
             throw new SeninHatan();
         }

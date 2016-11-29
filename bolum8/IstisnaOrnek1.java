@@ -3,13 +3,13 @@ import java.io.*;
 
 public class IstisnaOrnek1 {
 
-    public void cokCalis()  {
+    public void cokCalis() {
         File f = new File("ornek.txt");
-        BufferedReader bf = new BufferedReader(new FileReader(f));
-        System.out.println(bf.readLine());
+        //BufferedReader bf = new BufferedReader(new FileReader(f));
+        //System.out.println(bf.readLine());
     }
 
-    public void calis()  {
+    public void calis() {
         cokCalis();
     }
 
