@@ -28,7 +28,7 @@ public class OzgunSiralama {
         kitapTorbasi.add(k4);
 
         ekranaBas(kitapTorbasi);
-        Collections.sort(kitapTorbasi,new Comparator<Kitap>() {
+        Collections.sort(kitapTorbasi, new Comparator<Kitap>() {
             public int compare(Kitap o1, Kitap o2) {
                 return o1.olcegiNedir().compareTo(o2.olcegiNedir());
             }
